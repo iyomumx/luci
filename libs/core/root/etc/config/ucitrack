@@ -2,6 +2,7 @@ config network
 	option init network
 	list affects dhcp
 	list affects radvd
+	list affects lighttpd
 
 config wireless
 	list affects network
@@ -11,6 +12,8 @@ config firewall
 	list affects luci-splash
 	list affects qos
 	list affects miniupnpd
+	list affects shadowsocks
+	list affects redsocks
 
 config olsr
 	option init olsrd
@@ -51,3 +54,21 @@ config tinyproxy
 
 config 6relayd
 	option init 6relayd
+
+config aria2
+	option init aria2
+
+config shadowsocks
+	option init shadowsocks
+
+config lighttpd
+	option init lighttpd
+
+config vsftpd
+	option init vsftpd
+
+config pdnsd
+	option init pdnsd
+
+config redsocks
+	option init redsocks

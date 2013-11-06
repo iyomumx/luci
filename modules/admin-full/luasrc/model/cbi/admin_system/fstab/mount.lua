@@ -9,7 +9,7 @@ You may obtain a copy of the License at
 
 	http://www.apache.org/licenses/LICENSE-2.0
 
-$Id$
+$Id: mount.lua 6562 2010-11-27 04:55:38Z jow $
 ]]--
 
 local fs   = require "nixio.fs"
@@ -32,7 +32,7 @@ end
 
 
 m = Map("fstab", translate("Mount Points - Mount Entry"))
-m.redirect = luci.dispatcher.build_url("admin/system/fstab")
+m.redirect = luci.dispatcher.build_url("admin/fstab")
 
 if not arg[1] or m.uci:get("fstab", arg[1]) ~= "mount" then
 	luci.http.redirect(m.redirect)
