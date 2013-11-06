@@ -483,6 +483,9 @@ $(eval $(call application,redsocks,LuCI Support for redsocks,\
 	+PACKAGE_luci-app-redsocks:kmod-ipt-ipset \
 	+PACKAGE_luci-app-redsocks:ipset))
 
+$(eval $(call application,mentohust,mentohust configuration module,\
+	+PACKAGE_luci-app-mentohust:mentohust))
+
 ### Server Gateway Interfaces ###
 define sgi
   define Package/luci-sgi-$(1)
