@@ -468,17 +468,13 @@ $(eval $(call application,shadowsocks,LuCI Support for shadowsocks,\
 	+PACKAGE_luci-app-shadowsocks:kmod-ipt-ipset \
 	+PACKAGE_luci-app-shadowsocks:ipset))
 
-$(eval $(call application,lighttpd,LuCI Support for lighttpd,\
-	+PACKAGE_luci-app-lighttpd:lighttpd \
-	+PACKAGE_luci-app-lighttpd:lighttpd-mod-cgi))
-
 $(eval $(call application,vsftpd,LuCI Support for vsftpd,\
 	+PACKAGE_luci-app-vsftpd:vsftpd-tls))
 
 $(eval $(call application,pdnsd,LuCI Support for pdnsd,\
 	+PACKAGE_luci-app-pdnsd:pdnsd))
 
-$(eval $(call application,redsocks,LuCI Support for redsocks,\
+$(eval $(call application,redsocks2,LuCI Support for redsocks2,\
 	+PACKAGE_luci-app-redsocks:redsocks2 \
 	+PACKAGE_luci-app-redsocks:kmod-ipt-ipset \
 	+PACKAGE_luci-app-redsocks:ipset))
